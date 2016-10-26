@@ -11,10 +11,110 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.istc.intolerants.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:background="#d6d6d6">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Camara"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button9"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/camara"
+                android:background="@drawable/main_activity_btn"
+                android:layout_margin="4dp"
+                android:shadowRadius="20"
+                />
+
+            <Button
+                android:text="Catalogo de producto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button8"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/camara"
+                android:layout_margin="4dp"
+                android:background="@drawable/main_activity_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Busqueda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button7"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/main_activity_btn" />
+
+            <Button
+                android:text="cons. NO permitidos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button6"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/main_activity_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="179dp"
+            android:layout_weight="1">
+
+            <Button
+                android:text="Añadir productos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button5"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/main_activity_btn" />
+
+            <Button
+                android:text="Donde comer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/button4"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/main_activity_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="PUBLICIDAD EL DESVÁM DECORACIÖN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>
