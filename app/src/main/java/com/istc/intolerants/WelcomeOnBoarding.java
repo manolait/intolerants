@@ -32,17 +32,16 @@ public class WelcomeOnBoarding extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
         // Comprueba si es el primer lanzamiento.
         //prefManager = new PrefManager(this);
         //if (!prefManager.isFirstTimeLaunch()) {
         //launchHomeScreen();
         //finish();
         //}
-
-        // Making notification bar transparent
-        if (Build.VERSION.SDK_INT >= 21) {
-            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-        }
 
         setContentView(R.layout.activity_onboardingwelcome_layout);
 
@@ -51,18 +50,12 @@ public class WelcomeOnBoarding extends AppCompatActivity {
         btnSkip = (Button) findViewById(R.id.onboardingwelcome_btn_skip);
         btnNext = (Button) findViewById(R.id.onboardingwelcome_btn_next);
 
-
-        // layouts of all welcome sliders
         layouts = new int[]{
                 R.layout.activity_onboardingslide1_layout,
                 R.layout.activity_onboardingslide2_layout,
                 R.layout.activity_onboardingslide3_layout};
 
-        // adding bottom dots
         addBottomDots(0);
-
-        // making notification bar transparent
-        changeStatusBarColor();
 
         myViewPagerAdapter = new MyViewPagerAdapter();
         viewPager.setAdapter(myViewPagerAdapter);
@@ -78,10 +71,10 @@ public class WelcomeOnBoarding extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Checking for last page if last page home screen will be launched
+                // Busca si es la ultima pagina.
                 int current = getItem(+1);
                 if (current < layouts.length) {
-                    // Move to next screen
+                    // Pasa a la siguiente pagina
                     viewPager.setCurrentItem(current);
                 } else {
                     launchHomeScreen();
@@ -150,17 +143,6 @@ public class WelcomeOnBoarding extends AppCompatActivity {
 
         }
     };
-
-    /**
-     * Hacer la barra de notificaciones transparente
-     */
-    private void changeStatusBarColor() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(Color.TRANSPARENT);
-        }
-    }
 
     /**
      * Crear el view del PageAdapter
