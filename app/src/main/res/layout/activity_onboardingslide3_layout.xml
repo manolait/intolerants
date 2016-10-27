@@ -12,8 +12,8 @@ android:background="@android:color/white">
     android:orientation="vertical">
 
     <ImageView
-        android:layout_height="@dimen/img_width_height"
-        android:layout_width="@dimen/img_width_height"
+        android:layout_height="@dimen/onboarding_img_width_height"
+        android:layout_width="@dimen/onboarding_img_width_height"
         android:layout_marginBottom="40dp"
         android:src="@drawable/onboarding_salir" />
 
