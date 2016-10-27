@@ -1,8 +1,25 @@
 <resources>
     <string name="app_name">intolerants</string>
+    <string name="app_name2">Intolerants</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Strings OnBoarding Welcome -->
+    <string name="onboarding_slide0_tittle">Bienvenido</string>
+    <string name="onboarding_slide0_desc">Una aplicación para personas con intolerancias alimentarias.</string>
+    <string name="onboarding_slide1_tittle">¿Puedo tomar esto?</string>
+    <string name="onboarding_slide1_desc">Escanea el codigo de barras de un alimento, conoce si es apto para tu consumo y su composición alimentaria.</string>
+    <string name="onboarding_slide2_tittle">¿Y qué tomo ahora?</string>
+    <string name="onboarding_slide2_desc">Si un alimento no es apto para tu consumo no te preocupes, te ayudamos a encontrar otro alternativo muy similar.</string>
+    <string name="onboarding_slide3_tittle">¿Algo para picar?</string>
+    <string name="onboarding_slide3_desc">¿No sabes dónde comer? Te recomendamos dónde puedes picar algo sin problema.</string>
+
+    <!-- Basics Strings -->
+    <string name="comenzar">Comenzar</string>
+    <string name="saltar">Saltar</string>
+    <string name="siguiente">Siguiente</string>
+
 </resources>
