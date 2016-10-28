@@ -112,7 +112,7 @@ public class WelcomeOnBoarding extends AppCompatActivity {
 
     private void launchHomeScreen() {
         //prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WelcomeOnBoarding.this, MainActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
         finish();
     }
 
