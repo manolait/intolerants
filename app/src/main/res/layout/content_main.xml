@@ -5,110 +5,356 @@
     android:id="@+id/content_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.istc.intolerants.MainActivity"
     tools:showIn="@layout/app_bar_main"
-    android:background="#d6d6d6">
-
-
+    android:background="#EEEEEE">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:id="@+id/LinearLayout_principal">
+
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginTop="2dp"
+            android:id="@+id/linearlayout_fila_primera">
 
-            <Button
-                android:text="Camara"
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button9"
                 android:layout_weight="1"
-                android:drawableBottom="@drawable/camara"
-                android:background="@drawable/main_activity_btn"
-                android:layout_margin="4dp"
-                android:shadowRadius="20"
-                />
+                android:background="@drawable/layout"
+                android:radius="50dp"
+                android:layout_margin="1dp"
+                android:id="@+id/linearlayout_fila_primera_bt1">
 
-            <Button
-                android:text="Catalogo de producto"
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+
+                    <ImageView
+                        app:srcCompat="@drawable/ic_camera_alt_pink"
+                        android:id="@+id/Camara"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingTop="30dp"
+                        android:layout_gravity="center" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:text="CAMARA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textCamara"
+                        android:layout_gravity="center"
+                        android:textColor="#616161" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button8"
                 android:layout_weight="1"
-                android:drawableBottom="@drawable/camara"
-                android:layout_margin="4dp"
-                android:background="@drawable/main_activity_btn" />
+                android:layout_margin="1dp"
+                android:id="@+id/linearlayout_fila_primera_bt2">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout"
+                    android:radius="50dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+
+                        <ImageView
+                            app:srcCompat="@drawable/ic_description_black_nuevo"
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingTop="40dp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:text="LISTA DE PRODCUTOS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:layout_gravity="center"
+                            android:textColor="#616161" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
         </LinearLayout>
+
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/linear">
 
-            <Button
-                android:text="Busqueda"
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button7"
                 android:layout_weight="1"
-                android:layout_margin="4dp"
-                android:background="@drawable/main_activity_btn" />
+                android:background="@drawable/layout"
+                android:radius="50dp"
+                android:layout_margin="1dp">
 
-            <Button
-                android:text="cons. NO permitidos"
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+
+                    <ImageView
+                        app:srcCompat="@drawable/ic_search"
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingTop="30dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:text="BUSCAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4"
+                        android:layout_gravity="center"
+                        android:textColor="#616161" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button6"
                 android:layout_weight="1"
-                android:layout_margin="4dp"
-                android:background="@drawable/main_activity_btn" />
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout"
+                    android:radius="50dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+
+                        <ImageView
+                            app:srcCompat="@drawable/ic_warning_amarillo2"
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingTop="25dp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:text="Cons. NO permitidos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:layout_gravity="center"
+                            android:textColor="#616161" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
         </LinearLayout>
+
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:minHeight="179dp"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginBottom="2dp">
 
-            <Button
-                android:text="Añadir productos"
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button5"
                 android:layout_weight="1"
-                android:layout_margin="4dp"
-                android:background="@drawable/main_activity_btn" />
+                android:background="@drawable/layout"
+                android:radius="50dp"
+                android:layout_margin="1dp">
 
-            <Button
-                android:text="Donde comer"
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+
+                    <ImageView
+                        app:srcCompat="@drawable/ic_add_circle_rosa"
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingTop="20dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <TextView
+                        android:text="AÑADIR PRODUCTO"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4"
+                        android:layout_gravity="center"
+                        android:textColor="#616161" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/button4"
                 android:layout_weight="1"
-                android:layout_margin="4dp"
-                android:background="@drawable/main_activity_btn" />
+                android:layout_margin="1dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout"
+                    android:radius="50dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+
+                        <ImageView
+                            app:srcCompat="@drawable/tenedore_gris"
+                            android:id="@+id/imageView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingTop="30dp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:text="DONDE COMER"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4"
+                            android:layout_gravity="center"
+                            android:textColor="#616161" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
         </LinearLayout>
+
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
 
             <TextView
-                android:text="PUBLICIDAD EL DESVÁM DECORACIÖN"
+                android:text="PUBLICIDAD EL DESVÁN DECORACIÖN"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
@@ -117,4 +363,7 @@
         </LinearLayout>
     </LinearLayout>
 
+
 </RelativeLayout>
+
+
