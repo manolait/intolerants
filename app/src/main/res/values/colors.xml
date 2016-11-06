@@ -6,6 +6,8 @@
 
     <!-- Other colors -->
     <color name="blue100">#BBDEFB</color>
+    <color name="blue600">#1E88E5</color>
+
 
     <!-- Dots inactive colors -->
     <color name="dot_dark_screen">#2196F3</color>
@@ -18,4 +20,5 @@
     <array name="array_dot_active">
         <item>@color/dot_light_screen</item>
     </array>
+
 </resources>

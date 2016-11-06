@@ -21,5 +21,7 @@
     <string name="comenzar">Comenzar</string>
     <string name="saltar">Saltar</string>
     <string name="siguiente">Siguiente</string>
+    <string name="entrarmayuscula">ENTRAR</string>
+    <string name="registromayuscula">REGISTRO</string>
 
 </resources>
