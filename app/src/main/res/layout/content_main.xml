@@ -47,7 +47,7 @@
 
                     <ImageView
                         app:srcCompat="@drawable/ic_camera_alt_pink"
-                        android:id="@+id/Camara"
+                        android:id="@+id/img_Camara"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:paddingTop="30dp"
@@ -99,7 +99,7 @@
 
                         <ImageView
                             app:srcCompat="@drawable/ic_description_black_nuevo"
-                            android:id="@+id/imageView4"
+                            android:id="@+id/img_Lista_Productos"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
@@ -118,7 +118,7 @@
                             android:text="LISTA DE PRODCUTOS"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView4"
+                            android:id="@+id/textLista"
                             android:layout_gravity="center"
                             android:textColor="#616161" />
                     </RelativeLayout>
@@ -157,7 +157,7 @@
 
                     <ImageView
                         app:srcCompat="@drawable/ic_search"
-                        android:id="@+id/imageView4"
+                        android:id="@+id/img_Buscar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -176,7 +176,7 @@
                         android:text="BUSCAR"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
+                        android:id="@+id/textBuscar"
                         android:layout_gravity="center"
                         android:textColor="#616161" />
                 </RelativeLayout>
@@ -206,7 +206,7 @@
 
                         <ImageView
                             app:srcCompat="@drawable/ic_warning_amarillo2"
-                            android:id="@+id/imageView4"
+                            android:id="@+id/Img_Cons"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
@@ -225,7 +225,7 @@
                             android:text="Cons. NO permitidos"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView4"
+                            android:id="@+id/textCons"
                             android:layout_gravity="center"
                             android:textColor="#616161" />
                     </RelativeLayout>
@@ -265,7 +265,7 @@
 
                     <ImageView
                         app:srcCompat="@drawable/ic_add_circle_rosa"
-                        android:id="@+id/imageView4"
+                        android:id="@+id/img_Añadir"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -284,7 +284,7 @@
                         android:text="AÑADIR PRODUCTO"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/textView4"
+                        android:id="@+id/textAñadir"
                         android:layout_gravity="center"
                         android:textColor="#616161" />
                 </RelativeLayout>
@@ -314,7 +314,7 @@
 
                         <ImageView
                             app:srcCompat="@drawable/tenedore_gris"
-                            android:id="@+id/imageView4"
+                            android:id="@+id/img_Comer"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
@@ -333,7 +333,7 @@
                             android:text="DONDE COMER"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/textView4"
+                            android:id="@+id/textComer"
                             android:layout_gravity="center"
                             android:textColor="#616161" />
                     </RelativeLayout>
