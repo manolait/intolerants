@@ -53,7 +53,8 @@
             android:layout_weight="1"
             android:background="@color/blue600"
             android:text="@string/registromayuscula"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:id="@+id/Login_btn_Registro" />
 
         <TextView
             android:layout_width="match_parent"
@@ -66,7 +67,8 @@
             android:layout_weight="1"
             android:background="@color/blue600"
             android:text="@string/entrarmayuscula"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:id="@+id/Login_btn_Entrar" />
 
 </LinearLayout>
 
