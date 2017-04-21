@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.istc.intolerants.BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Email"
+        android:textColor="@color/blue600"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue600"
+        android:ems="10"
+        android:hint="Introducir Email"
+        android:inputType="textEmailAddress"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textViewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Contraseña"
+        android:textColor="@color/blue600"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue600"
+        android:ems="10"
+        android:hint="Introducir Contraseña"
+        android:inputType="textPassword"
+        android:textIsSelectable="false"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/Btn_Entrar_Frag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/blue600"
+        android:text="Entrar"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

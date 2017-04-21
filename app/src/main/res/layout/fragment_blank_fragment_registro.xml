@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.istc.intolerants.BlankFragmentRegistro"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/Btn_Reg_Correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/blue600"
+        android:text="Registrar Por Correo"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/Btn_Reg_Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/blue600"
+        android:text="Registrar Con Facebook"
+        android:textColor="@android:color/white" />
+</LinearLayout>

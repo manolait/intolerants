@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Manuel\Desktop\Android-2017\intolerants\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Manuel\Desktop\Android-2017\intolerants\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f571e74dbf8844f3343a674237249d6c8c995b1c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Manuel\Desktop\Android-2017\intolerants\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ce9c450d095cf41ea34f17a66b3ef0deb1e3f69e">
+        <dex dex="C:\Users\Manuel\Desktop\Android-2017\intolerants\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6653c7329f3115805a20416560a549212755289b\classes.dex" />
+    </item>
+
+</items>
